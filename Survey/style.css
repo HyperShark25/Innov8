@@ -1,0 +1,151 @@
+@keyframes disappear {
+	0% {
+ 		opacity: 100%;
+		visibility: visible;
+		transform: scale(1);
+	}
+	100% {
+ 		opacity: 0%;
+		visibility: hidden;
+		transform: scale(0);
+	}
+}
+
+@keyframes rotate {
+	0% {
+ 		opacity: 0%;
+		visibility: hidden;
+		transform: rotate(0deg);
+	}
+	
+	100% {
+ 		opacity: 100%;
+		visibility: visible;
+		transform: rotate(720deg) scale(1);
+	}
+}
+
+@keyframes appear {
+	0% {
+ 		opacity: 0%;
+		visibility: hidden;
+		transform: scale(0);
+	}
+	100% {
+ 		opacity: 100%;
+		visibility: visible;
+		transform: scale(1);
+	}
+}
+
+body {
+	background-image : url("instruction-return-js-socials-1.jpg");
+}
+
+.next_page {
+	position: fixed;
+	bottom: 80%;
+	width: 7vw;
+	height: 11vh;
+	border: 5px solid black;
+	border-radius: 50px;
+	color: white;
+	background-color: transparent;
+	font-size: calc(2.4vw + 2.4vh);
+	cursor: pointer;
+	transition: 1s;
+	z-index: 1;
+	opacity: 40%;
+	text-align: center;
+	padding-top: 3vh;
+}
+
+.next_page:hover {
+	transform: rotate(720deg) scale(1.5);
+	background-color: white;
+	color: black;
+	opacity: 100%;
+}
+.next_page {
+	right: 5%;
+}
+
+.surveyForm {
+	animation: appear 1s;
+	visibility: visible;
+	opacity: 100%;
+	position: absolute;
+}
+
+fieldset {
+	margin-top: 30px;
+	border-radius: 60px;
+	border: 10px solid black;
+	width: 40vw;
+	height: 105vh;
+	margin-left: 28vw;
+	background-color: rgb(0, 150, 205);
+	background-color: rgba(0, 10, 150, 0.8);
+}
+
+legend {
+	text-align: center;
+	font-size: 36px;
+	padding-top: 1vh;
+	font-family: Verdana;
+	color: rgba(250,250,250,0.8);
+}
+
+form {
+	margin-top: 2vh;
+}
+
+label {
+	font-size: 32px;
+	font-weight: bold;
+	color: rgba(250,250,250,0.9);
+}
+
+label, .username, .password {
+	margin-top: 2vh;
+	margin-bottom: 6vh;
+}
+
+
+.username, .password {
+	border: 3px solid black;
+	width: 38vw;
+	height: 3vw;
+	font-size: 30px;
+	color: black;
+	border-radius: 12px;
+	transition: 0.5s;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+.username:focus, .password:focus {
+	background-color: black;
+	color: white;
+	border-radius: 40px;
+	font-weight: bold;
+}
+
+.submit {
+	margin-left: 8vw;
+	margin-top: 4vh;
+	width: 25vw;
+	height: 7vh;
+	border-radius: 2vw;
+	background-color: black;
+	color: white;
+	transition: 1s;
+	font-size: calc(1.6vw + 1.6vh);
+	font-weight: bold;
+}
+
+.submit:hover {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	font-weight: bold;
+	transform: scale(1.2);
+}
