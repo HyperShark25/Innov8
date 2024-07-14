@@ -7,6 +7,7 @@ $email = $_POST["email"];
 $age = $_POST["age"];
 $phone = $_POST["phone"];
 
+var_dump($username);
 
 $stmt = "
 	INSERT into info (
