@@ -1,0 +1,100 @@
+@keyframes appear {
+	0% {
+ 		opacity: 0%;
+		visibility: hidden;
+		transform: scale(0);
+	}
+	100% {
+ 		opacity: 100%;
+		visibility: visible;
+		transform: scale(1);
+	}
+}
+
+@keyframes rotate {
+	0% {
+ 		opacity: 0%;
+		visibility: hidden;
+		transform: rotate(0deg);
+	}
+	
+	100% {
+ 		opacity: 100%;
+		visibility: visible;
+		transform: rotate(720deg) scale(1);
+	}
+}
+
+
+body {
+	background-color: rgb(100, 50, 50);
+}
+
+.prev_page {
+	position: fixed;
+	bottom: 80%;
+	width: 7vw;
+	height: 11vh;
+	border: 5px solid black;
+	border-radius: 50px;
+	color: white;
+	background-color: transparent;
+	font-size: calc(2.4vw + 2.4vh);
+	cursor: pointer;
+	transition: 1s;
+	z-index: 1;
+	opacity: 40%;
+	text-align: center;
+	padding-top: 3vh;
+}
+
+.prev_page:hover {
+	transform: rotate(720deg) scale(1.5);
+	background-color: white;
+	color: black;
+	opacity: 100%;
+}
+.prev_page {
+	left: 5%;
+}
+
+caption {
+	font-family: verdana;
+	font-size: 36px;
+	font-weight: bold;
+	font-style: italic;
+	border: 10px solid black;
+}
+
+table * {
+	border: 2px solid black;
+	margin: 11px;
+}
+
+table {
+	width: 60%;
+	border: 6px solid black;
+	margin-left: 15%;
+	background-color: rgb(200, 200, 150);
+}
+tbody, thead {
+	animation: appear 2.5s;
+}
+
+.row {
+	transition: 0.5s;
+}
+
+.row:hover {
+	background-color: black;
+	color: white;
+}
+
+th {
+	font-size: 36px;
+}
+
+td {
+	text-align: center;
+	font-size: 28px;
+}
